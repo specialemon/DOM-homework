@@ -13,6 +13,7 @@ body .row .col .container .sideBar {
 .mainCol {
     background: #777777;
     position: relative;
+    overflow: auto;
 }
 
 .infoBox {
@@ -33,7 +34,7 @@ body .row .col .container .sideBar {
     position: absolute;
     margin: 0 auto;
     left: 10%;
-    top: 10%;
+    top: 5%;
 }
 
 
@@ -41,5 +42,5 @@ body .row .col .container .sideBar {
     position: absolute;
     margin: 0 auto;
     left: 10%;
-    top: 20%;
+    top: 12%;
 }
