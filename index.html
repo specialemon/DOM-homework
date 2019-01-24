@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <script src="dom.js"></script>
+  <script src="employeeList.js"></script>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-2">
+        <div class="sideBar">
+          <ul>
+            <li><button id="view" class="sideButton btn btn-outline-light">View</button></li>
+            <li><button id="add" class="sideButton btn btn-outline-light">Add</button></li>
+            <li><button id="verify" class="sideButton btn btn-outline-light">Verify</button></li>
+            <li><button id="update" class="sideButton btn btn-outline-light">Update</button></li>
+            <li><button id="delete" class="sideButton btn btn-outline-light">Delete</button></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col">
+        <main>
+          <div class="userInputForm add inputField">
+            <form>
+              <input class="all add verify update delete" id="name" type="text" name="name" value="">
+              <input class="all add update" id="officeNum" type="text" name="officeNum" value="">
+              <input class="all add update" id="phoneNum" type="text" name="phoneNum" value="">
+              <button class="all add" id="formAdd" type="submit" value="submit">Submit</button>
+              <button class="all verify" id="formVerify" type="submit" value="submit">Verify</button>
+              <button class="all update" id="formUpdate" type="submit" value="submit">Update</button>
+              <button class="all delete" id="formDelete" type="submit" value="submit">Delete</button>
+            </form>
+          </div>
+          <p class="yesNo all verify"></p>
+          <div class="mainDisplay view add update delete">
+          </div>
+          <script src="app.js"></script>
+        </main>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

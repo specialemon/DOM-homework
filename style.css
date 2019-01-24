@@ -1,0 +1,11 @@
+body {
+    height: 100%;
+    width: 100%;
+}
+.sideBar {
+    background: #777777;
+}
+
+.container .col-2 .sideBar {
+    height: 100%;
+}
