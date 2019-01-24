@@ -66,9 +66,9 @@ deleteDisplayButton.addEventListener("click", function (event) {
 const renderBox = function () {
     $(".mainDisplay").html("");
     for (i = 0; i < employeeList.length; i++) {
-        $(".mainDisplay").append(`<p class="infoBox">${employeeList[i].name} 
-                                 ${employeeList[i].officeNum}
-                                 ${employeeList[i].phoneNum}</p>`);
+        $(".mainDisplay").append(`<div class="infoBox"><p class="infoLine"> Employee Name: ${employeeList[i].name}</p> 
+        <p class="infoLine"> Office Number: ${employeeList[i].officeNum}</p>
+        <p class="infoLine">Phone Number: ${employeeList[i].phoneNum}</p></div>`);
     }
     return;
 }
@@ -124,7 +124,7 @@ const deleteInfo = function () {
     if (verifyInfo() == true) {
         for (i = 0; i < employeeList.length; i++) {
             if (employeeList[i].name === name) {
-                employeeList.splice(i,1);
+                employeeList.splice(i, 1);
             }
         }
     }
@@ -139,13 +139,15 @@ const viewDisplay = function () {
 
 //add display
 
-const addDisplay = function() {
+const addDisplay = function () {
+    $(".inputField").show();
     $(".all").hide();
     $(".add").show();
 }
 
 //verify display
-const verifyDisplay = function() {
+const verifyDisplay = function () {
+    $(".inputField").show();
     $(".yesNo").text("");
     $(".all").hide();
     $(".mainDisplay").hide();
@@ -153,13 +155,15 @@ const verifyDisplay = function() {
 }
 
 //update display
-const updateDisplay = function() {
+const updateDisplay = function () {
+    $(".inputField").show();
     $(".all").hide();
     $(".update").show();
 }
 
 //delete display
-const deleteDisplay = function() {
+const deleteDisplay = function () {
+    $(".inputField").show();
     $(".all").hide();
     $(".delete").show();
 }

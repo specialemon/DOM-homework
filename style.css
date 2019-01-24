@@ -1,11 +1,45 @@
 body {
-    height: 100%;
     width: 100%;
 }
-.sideBar {
-    background: #777777;
+.sideCol {
+    background: #444444;
+    padding: 28% 5%;
 }
 
-.container .col-2 .sideBar {
+body .row .col .container .sideBar {
     height: 100%;
+}
+
+.mainCol {
+    background: #777777;
+    position: relative;
+}
+
+.infoBox {
+    font-size: 15px;
+    background: white;
+    border: 3px solid cadetblue;
+    box-sizing: border-box;
+    width: 30%;
+    border-radius: 10px;
+    text-align: left;
+    padding-left: 30px;
+    padding-top: 10px;
+    float: left;
+    margin: 2%;
+}
+
+.userInputForm {
+    position: absolute;
+    margin: 0 auto;
+    left: 10%;
+    top: 10%;
+}
+
+
+.mainDisplay {
+    position: absolute;
+    margin: 0 auto;
+    left: 10%;
+    top: 20%;
 }
