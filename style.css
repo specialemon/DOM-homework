@@ -1,13 +1,21 @@
-body {
-    width: 100%;
+body html {
+    height: 100%;
 }
 .sideCol {
     background: #444444;
     padding: 28% 5%;
 }
 
-body .row .col .container .sideBar {
-    height: 100%;
+ul {
+    padding: 0;
+}
+
+li {
+    height: 62px;
+}
+
+#update {
+    width: 100%;
 }
 
 .mainCol {
