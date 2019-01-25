@@ -52,3 +52,16 @@ li {
     left: 10%;
     top: 12%;
 }
+
+.yesNo {
+    position: absolute;
+    top: 12%;
+    left: 10%;
+    background: white;
+    text-align: center;
+    width: 10%;
+    height: 5%;
+    padding: 10px;
+    border: 3px solid cadetblue;
+    box-sizing: border-box;
+}
